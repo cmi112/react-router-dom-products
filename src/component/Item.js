@@ -1,6 +1,7 @@
 import axios from 'axios'
 import React from 'react'
 import {useState,useEffect} from "react"
+import "../styles/Item.css"
 
 export default function Item({match}) {
   const [id,setId]=useState()
@@ -19,7 +20,7 @@ export default function Item({match}) {
   }, [])
 
   return (
-    <div>
+    <div className="item">
       <h1>Item Details</h1>
       <h3>{prod.title}</h3>
       <p>${prod.price}</p>

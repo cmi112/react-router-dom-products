@@ -1,6 +1,7 @@
 import {BrowserRouter as Route,Link} from "react-router-dom"
 import {useState,useEffect} from "react"
 import axios from "axios"
+import "../styles/Product.css"
 
 function Products() {
   const [products,setProducts]=useState([])
